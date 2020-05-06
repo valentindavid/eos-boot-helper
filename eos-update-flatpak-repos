@@ -1129,6 +1129,16 @@ FLATPAKS_TO_MIGRATE = [
         "old-origin": "eos-apps",
         "new-origin": "flathub",
     },
+    # migrate Firefox from eos-apps to flathub (T29746)
+    {
+        "name": "org.mozilla.Firefox",
+        "new-name": "org.mozilla.firefox",
+        "kind": Flatpak.RefKind.APP,
+        "old-branch": "eos3",
+        "new-branch": "stable",
+        "old-origin": "eos-apps",
+        "new-origin": "flathub",
+    },
 ]
 
 
